@@ -1,0 +1,48 @@
+:root {
+  --border-radius: 15px;
+  --gap: 2px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #222;
+  font-family: 'Roboto';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* height: 100vh; */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  border-radius: var(--border-radius);
+  background: white;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  color: white;
+  height: 150px;
+  width: 150px;
+  background: #444;
+  border-radius: var(--border-radius);
+  flex-basis: 15%;
+}
+
+.cell:hover {
+  cursor: pointer;
+}
+
+#size-select {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
